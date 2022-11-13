@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Membership Form</h1>
+        <img src="image1.jpg" alt="logo" style="width:200px; height:150px;">
+        <hr>
+    </header>
+    <main>
+        <form name="clientForm" method="post" action="http://ss1.ciwcertified.com/cgi-bin/process.pl">
+            <fieldset>
+                <legend><strong>Personal Information</strong></legend>
+                <label for="firstName">First Name:</label> <input type="text" name="firstName" id="firstName"><br>
+                <label for="lastName">Last Name:</label> <input type="text" name="lastName" id="lastName"><br>
+                <label for="birthday">Birthday:</label> <input type="date" name="birthday" id="birthday" value="2000-01-01"><br>
+                <label for="age">Age:</label> <input type="number" name="age" id="age"><br>
+                <label for="phoneNumber">Phone number:</label> <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="(xxx) xxx-xxxx"><br>
+            </fieldset>
+            <fieldset>
+                <legend><strong>Account Information</strong></legend>
+                <label for="email">Create Username:</label> <input type="email" name="username/email" id="email"><br>
+                <label for="password">Create Password:</label> <input type="password" name="password" id="password"><br>
+                <p>College of study?</p><input type="radio" name="College" id="CollegeBroward" value="Broward College" checked>Broward College <input type="radio" name="College" id="CollegeMiami" value="Miami-Dade College">Miami-Dade College <input type="radio" name="College" id="CollegePalmBeach" value="Palm Beach College">Palm Beach State College<br>
+                <label for="newsletter">Would you like to be informed of club updates?</label> <input type="checkbox" name="newsletter" id="newsletter"><br>
+                <label for="gradYear">When is your graduation date?</label> <select name="gradYear" id="gradYear" size="4" multiple>
+                   <option value="2022" selected>2022</option>
+                  <option value="2023">2023</option>
+                   <option value="2024">2024</option>
+                   <option value="2025">2025</option>
+                </select><br>
+                <label for="comments"><em>Sugguestions for our website:</em></label> <textarea name="comments" id="comments" cols="50" rows="4" placeholder="Please send us your feedback."></textarea><br>
+            </fieldset>
+            <input type="submit" value="Join now">
+        </form>
+        <hr>
+        <strong><a href="INDEX.html">Return to Home Page &#127968;</a></strong>
+    </main>
+    <footer>
+        <hr>
+        &copy; 2022 Broward College
+    </footer>
+</body>
+</html>
